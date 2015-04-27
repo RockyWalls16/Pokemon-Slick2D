@@ -1,0 +1,11 @@
+ask>>>Tu aime les patates bien chaudes toi ?<awnser>Oui;Non;Patate_!
+
+if>>>[awnser] = Oui
+	print>>>Moi aussi !
+elseif>>>[awnser] = Non
+	print>>>Monstre !
+else>>>/
+	print>>>Euh...
+endif>>>/
+
+end>>>/
