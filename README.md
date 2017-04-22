@@ -4,7 +4,7 @@ This is a pokemon red version clone made with Slick-2D. It's far from being fini
 # Controls
 * [Z]: A button
 * [A]: B button
-* [Arrows]: Move
+* Arrows: Move
 * [Enter]: Start menu
 
 # Screenshots
