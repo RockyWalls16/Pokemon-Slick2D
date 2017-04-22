@@ -23,7 +23,7 @@ public class GuiMenu extends Gui
 		renderer.getGameFont().drawString(96, 16, "Pokedex", Color.black);
 		renderer.getGameFont().drawString(96, 32, "Pokemon", Color.black);
 		renderer.getGameFont().drawString(96, 48, "Sac", Color.black);
-		renderer.getGameFont().drawString(96, 64, ((String)CommonVariable.getVariableValue("playerName")).substring(0, 7), Color.black);
+		renderer.getGameFont().drawString(96, 64, CommonVariable.getVariableValue("playerName").toString().substring(0, Math.min(7, CommonVariable.getVariableValue("playerName").toString().length())), Color.black);
 		renderer.getGameFont().drawString(96, 80, "Sauver", Color.black);
 		renderer.getGameFont().drawString(96, 96, "Options", Color.black);
 		renderer.getGameFont().drawString(96, 112, "Retour", Color.black);

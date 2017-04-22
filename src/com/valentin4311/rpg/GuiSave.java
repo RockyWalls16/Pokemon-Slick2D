@@ -29,7 +29,7 @@ public class GuiSave extends Gui
 		backMenu.drawGui(renderer);
 		
 		renderer.drawBox(32, 0, 160, 80);
-		renderer.getGameFont().drawString(40, 16, "Joueur " + CommonVariable.getVariableValue("playerName").toString().substring(0, 7), Color.black);
+		renderer.getGameFont().drawString(40, 16, "Joueur " + CommonVariable.getVariableValue("playerName").toString().substring(0, Math.min(7, CommonVariable.getVariableValue("playerName").toString().length())), Color.black);
 		renderer.getGameFont().drawString(40, 32, "Badges", Color.black);
 		renderer.getGameFont().drawString(40, 48, "Pokedex", Color.black);
 		renderer.getGameFont().drawString(144, 48, "0", Color.black);
